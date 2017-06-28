@@ -6,7 +6,7 @@ fileprivate struct DBConstants {
     static let host = "127.0.0.1"
     static let port = 3306
     static let user = "root"
-    static let password = ""
+    static let password = "Sheng"
     static let database = "test"
     
 }

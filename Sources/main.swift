@@ -70,7 +70,7 @@ routes.add(method: .post, uri: "/uploadAvatar") { (request, response) in
     do {
         try imagesDir.create()
         let _ = try file.moveTo(path: imagesDir.path + fileName, overWrite: true)
-        let finalURL = "http://" + server.serverName + ":\(server.serverPort)" + "/images/\(fileName)"
+        let finalURL = "images/\(fileName)"
         let dictionary = ["url": finalURL]
         try response.setBody(json: dictionary)
     } catch let error {
